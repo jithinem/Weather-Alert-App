@@ -12,6 +12,8 @@ This application leverages **MongoDB** to manage city data, alerts, and weather 
 1. Clone the repository.
 2. Install dependencies:
    npm install
+   npm start
+   The app is initialized from server.js
 
 
 
