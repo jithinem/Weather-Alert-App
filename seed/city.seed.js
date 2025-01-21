@@ -6,7 +6,7 @@ const cityJson = [
   { "city": "Mumbai" }
 ];
 
-const seedCountries = async () => {
+const seedCities = async () => {
   try {
     // Check if the City collection is empty
     const cityCount = await City.countDocuments();
@@ -23,4 +23,4 @@ const seedCountries = async () => {
   }
 };
 
-module.exports = {seedCountries}
+module.exports = {seedCities}

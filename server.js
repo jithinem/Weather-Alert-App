@@ -6,13 +6,13 @@ const dotenv = require('dotenv');
 const connectDB = require("./config/database");  
 const routes = require('./routes');
 const { startWeatherCron } = require("./cron-job/cron.job");
-const {seedCountries} = require('./seed/city.seed');
+const {seedCities} = require('./seed/city.seed');
 
 dotenv.config();
 
 connectDB();
 
-seedCountries();
+seedCities();
 
 startWeatherCron();
 
