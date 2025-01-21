@@ -50,10 +50,11 @@ const getWeatherData = async () => {
 };
 
 // Function to start the cron job
+getWeatherData();
 const startWeatherCron = () => {
-  cron.schedule("*/10 * * * * *", () => {
+  cron.schedule("*/10 * * * *", async () => {
     console.log("Fetching weather data...");
-    getWeatherData();
+    await getWeatherData();
   });
 };
 

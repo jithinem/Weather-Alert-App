@@ -14,6 +14,7 @@ This application leverages **MongoDB** to manage city data, alerts, and weather 
    npm install
    npm start
    The app is initialized from server.js
+   The cron job is set to run every 10 minutes
 
 
 
